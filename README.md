@@ -13,7 +13,7 @@ Key = 80000000000000000000 and IV = 00000000000000000000
 
 2) Key Stream Generation
 
-3)Encryption using key stream and XOR with user input, then display.
+3) Encryption using key stream and XOR with user input, then display.
 
-4)Reverse the process and decrypt the ciphertext, then display.
+4) Reverse the process and decrypt the ciphertext, then display.
 
