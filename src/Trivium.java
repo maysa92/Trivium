@@ -13,7 +13,7 @@ public class Trivium {
     int c1, c2, c3, c4, c5, c6;
 	int keystream;
 	String input;
-	int[] result = new int [72];
+	int[] result = new int [80];
     
     {
     //initialize A, B, C
@@ -49,7 +49,7 @@ public class Trivium {
     //ask for plain text
     String userinput() {
     	Scanner userinput = new Scanner(System.in);  // Create a Scanner object
-    	System.out.println("Enter the plain text(9 characters): ");
+    	System.out.println("Enter the plain text(10 characters): ");
     	this.input = userinput.nextLine(); 
     	return input;
     }
