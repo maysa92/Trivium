@@ -13,7 +13,7 @@ public class Trivium {
     int c1, c2, c3, c4, c5, c6;
 	int keystream;
 	String input;
-	int[] result = new int [3000];
+	int[] result = new int [72];
     
     {
     //initialize A, B, C
@@ -49,7 +49,7 @@ public class Trivium {
     //ask for plain text
     String userinput() {
     	Scanner userinput = new Scanner(System.in);  // Create a Scanner object
-    	System.out.println("Enter the plain text: ");
+    	System.out.println("Enter the plain text(9 characters): ");
     	this.input = userinput.nextLine(); 
     	return input;
     }
@@ -118,7 +118,7 @@ public class Trivium {
     }
     
     //the warm up
-    int[] keystreamoutput = new int [3000];
+    int[] keystreamoutput = new int [100];
     void warmup() {
     	for (int i = 0; i < 1153 ; i++) {
     		generateKey();
@@ -132,7 +132,7 @@ public class Trivium {
     }
     
     //encryption
-    int[] cypher = new int[3000];
+    int[] cypher = new int[100];
     void encrypt(){
     	System.out.println("Ciphers: ");
     	stringtoBinary(input);
@@ -146,7 +146,7 @@ public class Trivium {
     
     //decryption
     void decrypt(){
-    	int[] decryption = new int[3000];	
+    	int[] decryption = new int[128];	
     	System.out.println("Plaintext Decrypted: ");
     	for (int i = 0; i < cypher.length; i++) {
 	        decryption[i] = (cypher[i]^keystreamoutput[i]);
